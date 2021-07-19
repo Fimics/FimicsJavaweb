@@ -1,11 +1,11 @@
-package com.fimics.javaweb
+package com.mic.servlet
 
 import javax.servlet.http.*
 import javax.servlet.annotation.*
 
 //@WebServlet(name = "helloServlet", value = ["/hello-servlet"])
 //@WebServlet(urlPatterns = ["/helloServlet"])
-@WebServlet("/helloServlet")
+@WebServlet("/hello")
 class HelloServlet : HttpServlet() {
     private lateinit var message: String
 
@@ -15,7 +15,6 @@ class HelloServlet : HttpServlet() {
 
     public override fun doGet(request: HttpServletRequest, response: HttpServletResponse) {
         response.contentType = "text/html"
-
         // Hello
         val out = response.writer
         out.println("<html><body>")

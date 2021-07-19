@@ -7,7 +7,7 @@
     <!--servlet配置  3.0之后使用注解配置，可以不用选webapp-->
 <!--    <servlet>-->
 <!--        <servlet-name>helloServlet</servlet-name>-->
-<!--        <servlet-class>com.fimics.javaweb.HelloServlet</servlet-class>-->
+<!--        <servlet-class>com.fimics.javaweb.servlet.HelloServlet</servlet-class>-->
 <!--    </servlet>-->
 <!--    -->
 <!--    <servlet-mapping>-->
