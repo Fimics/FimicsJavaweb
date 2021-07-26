@@ -21,7 +21,7 @@ class SessionServlet:HttpServlet() {
         //期望客户端关闭后，session也能相同
         val c = Cookie("JSESSIONID", session!!.id)
         c.maxAge = 60 * 60
-        response.addCookie(c)
+        resp?.addCookie(c)
     }
 
     override fun doPost(req: HttpServletRequest?, resp: HttpServletResponse?) {
